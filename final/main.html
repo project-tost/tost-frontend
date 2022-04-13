@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="menu">
+        <div class="logo">
+          <img src="tost.svg" id="logo" width="100px" height="50px" />
+          <a href="/introduce/intro.nhd"
+            ><button
+              class="logout"
+              type="button"
+              onclick="javascript:sensorBtnClick('logout');"
+            >
+              로그아웃
+            </button></a
+          >
+        </div>
+
+        <!--[S] gnb -->
+        <div id="menubar">
+          <nav id="gnb" align="center">
+            <ul class="clear">
+              <li class="introduce">
+                <div class="depth1">
+                  <a
+                    href="/introduce/intro.nhd"
+                    onclick="GA_Event('PC_메뉴', '메뉴', '소개_H.Point소개');"
+                    >기업정보</a
+                  >
+                </div>
+                <ul
+                  class="depth2"
+                  style="
+                    display: none;
+                    height: 127px;
+                    padding-top: 15px;
+                    margin-top: 0px;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;
+                  "
+                >
+                  <li>
+                    <a
+                      href="/introduce/intro.nhd"
+                      onclick="GA_Event('PC_메뉴', '메뉴', '소개_H.Point소개');"
+                      >H.Point소개</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/introduce/shopping.nhd"
+                      onclick="GA_Event('PC_메뉴', '메뉴', '소개_사용처안내');"
+                      >사용처안내</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/introduce/benefit.nhd"
+                      onclick="GA_Event('PC_메뉴', '메뉴', '소개_가입혜택');"
+                      >가입혜택</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="collect">
+                <div class="depth1">
+                  <a
+                    href="/stack/joy.nhd"
+                    onclick="GA_Event('PC_메뉴', '메뉴', '쌓기_즐길거리');"
+                    >시험일정</a
+                  >
+                </div>
+                <ul
+                  class="depth2"
+                  style="
+                    display: none;
+                    height: 171px;
+                    padding-top: 15px;
+                    margin-top: 0px;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;
+                  "
+                >
+                  <li>
+                    <a
+                      href="/stack/joy.nhd"
+                      onclick="GA_Event('PC_메뉴', '메뉴', '쌓기_즐길거리');"
+                      >즐길거리</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/stack/change.nhd"
+                      onclick="GA_Event('PC_메뉴', '메뉴', '쌓기_전환하기');"
+                      >전환하기</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/stack/charge.nhd"
+                      onclick="GA_Event('PC_메뉴', '메뉴', '쌓기_충전하기');"
+                      >충전하기</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/stack/coupon.nhd"
+                      onclick="GA_Event('PC_메뉴', '메뉴', '쌓기_영수증쿠폰');"
+                      >영수증/쿠폰</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="use">
+                <div class="depth1">
+                  <a
+                    href="/friend/point.nhd"
+                    onclick="GA_Event('PC_메뉴', '메뉴', '쓰기_포인트샵');"
+                    >성적확인</a
+                  >
+                </div>
+                <ul
+                  class="depth2"
+                  style="
+                    display: none;
+                    height: 127px;
+                    padding-top: 15px;
+                    margin-top: 0px;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;
+                  "
+                >
+                  <li>
+                    <a
+                      href="/friend/point.nhd"
+                      onclick="GA_Event('PC_메뉴', '메뉴', '쓰기_포인트샵');"
+                      >포인트샵</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/friend/gift.nhd"
+                      onclick="GA_Event('PC_메뉴', '메뉴', '쓰기_선물하기');"
+                      >선물하기</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/friend/donate.nhd"
+                      onclick="GA_Event('PC_메뉴', '메뉴', '쓰기_기부하기');"
+                      >기부하기</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div id="mainimg">
+      <img src="main8.jpg" width="100%" /><a href="/introduce/intro.nhd"
+        ><button
+          class="mainBtn1"
+          type="button"
+          onclick="javascript:sensorBtnClick('btn1');"
+        >
+          나의 레벨 테스트 해보기
+        </button></a
+      >
+    </div>
+    <div><img src="main2.png" id="main2" /></div>
+    <div style="background-color: #222866">
+      <img src="main4.png" id="main3" />
+    </div>
+
+    <div style="width: 100%; height: 100px; background-color: #222866"></div>
+    <div>
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>To<span>s</span>T</h3>
+
+          <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+            <a href="#">Blog</a>
+            ·
+            <a href="#">Pricing</a>
+            ·
+            <a href="#">About</a>
+            ·
+            <a href="#">Faq</a>
+            ·
+            <a href="#">Contact</a>
+          </p>
+
+          <p class="footer-company-name">TosT&copy; 2022</p>
+        </div>
+
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Korea </span> KR(South Korea)</p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+821096*****</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p>
+              <a href="mailto:support@company.com">TosT@gmail.com </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the TosT</span>
+            TosT는 토익 스피킹 테스트의 줄임말로 국내 최다 기업에서 활용하는
+            신입 채용 기준이 되는 토익 스피킹 시험을 보게 되는 주요 고객은
+            대학생, 취준생입니다. 그들의 학습 시 어려운 점으로 꼽히는 수험자
+            억양 및 발음 파악을 손쉽게 하기 위해 원어민 발음과 수험자의 발음을
+            비교하여 정확한 발음 파악을 도와주는 웹사이트입니다.
+          </p>
+
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
