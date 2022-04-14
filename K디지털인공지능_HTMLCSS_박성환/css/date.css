@@ -6,7 +6,7 @@ img {
   width: 1900px;
   height: 850px;
 }
-#header {
+#top {
   background-color: #bf7780;
   height: 3.5%;
   width: 100%;
@@ -44,4 +44,37 @@ img {
 }
 #tt {
   background-color: #dcdbdb;
+}
+
+/* header */
+header {
+  border-bottom: 1px solid #e4e4e4; 
+  display: flex;
+  padding: 10px;
+  height: 7%;
+  box-sizing: border-box;
+}
+header > h1 {
+  display: inline-block;
+  height: 100%;
+  flex-grow: 1;
+}
+.fa-calendar-check {color: #fa709a; margin-right: 2%; vertical-align: middle;}
+header > h1 > span {color: #a7a7a7; font-size: 24px; font-weight: 400; vertical-align: bottom;}
+.calendar_title { margin: 0 auto; flex-grow: 1;}
+.calendar_title .prev , .next{
+  width: 30px;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  color: #5c5c5c;
+}
+.calendar_title .current-year-month {
+  font-size: 24px;
+  vertical-align: middle;
+  color: rgb(255, 82, 195);
+  display: inline-block;
+  margin: 0 20px;
 }
