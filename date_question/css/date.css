@@ -14,13 +14,13 @@ img {
 
 #side {
   height: 96.5%;
-  width: 16%;
+  width: 12.5%;
   background-color: #2d315f;
   float: left;
 }
 #center {
   height: 76.5%;
-  width: 68%;
+  width: 75%;
   float: left;
   text-align: center;
   margin-top: 60px;
@@ -28,7 +28,7 @@ img {
 
 #side2 {
   height: 96.5%;
-  width: 16%;
+  width: 12.5%;
   background-color: #2d315f;
   float: left;
 }
@@ -44,11 +44,12 @@ img {
 }
 #tt {
   background-color: #dcdbdb;
+  height: 8%;
 }
 
 /* header */
 header {
-  border-bottom: 1px solid #e4e4e4; 
+  border-bottom: 1px solid #e4e4e4;
   display: flex;
   padding: 10px;
   height: 7%;
@@ -59,10 +60,23 @@ header > h1 {
   height: 100%;
   flex-grow: 1;
 }
-.fa-calendar-check {color: #fa709a; margin-right: 2%; vertical-align: middle;}
-header > h1 > span {color: #a7a7a7; font-size: 24px; font-weight: 400; vertical-align: bottom;}
-.calendar_title { margin: 0 auto; flex-grow: 1;}
-.calendar_title .prev , .next{
+.fa-calendar-check {
+  color: #fa709a;
+  margin-right: 2%;
+  vertical-align: middle;
+}
+header > h1 > span {
+  color: #a7a7a7;
+  font-size: 24px;
+  font-weight: 400;
+  vertical-align: bottom;
+}
+.calendar_title {
+  margin: 0 auto;
+  flex-grow: 1;
+}
+.calendar_title .prev,
+.next {
   width: 30px;
   height: 100%;
   cursor: pointer;
