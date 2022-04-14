@@ -14,13 +14,13 @@ img {
 
 #side {
   height: 96.5%;
-  width: 12.5%;
+  width: 9%;
   background-color: #2d315f;
   float: left;
 }
 #center {
   height: 76.5%;
-  width: 75%;
+  width: 81%;
   float: left;
   text-align: center;
   margin-top: 60px;
@@ -28,7 +28,7 @@ img {
 
 #side2 {
   height: 96.5%;
-  width: 12.5%;
+  width: 9%;
   background-color: #2d315f;
   float: left;
 }
