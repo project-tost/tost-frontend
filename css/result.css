@@ -1,9 +1,12 @@
 img {
-  margin-left: 850px;
+  margin-left: 900px;
+  width: 100px;
+
+  height: 50px;
 }
 #header {
   background-color: #bf7780;
-  height: 5%;
+  height: 50px;
   width: 100%;
 }
 
