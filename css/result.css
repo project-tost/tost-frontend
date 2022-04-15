@@ -158,3 +158,29 @@ body {
   /* Support for IE. */
   font-feature-settings: "liga";
 }
+
+/* 밑줄 이벤트 */
+.highlight {
+  display: inline-table;
+  position: relative;
+  overflow: hidden;
+}
+.highlight span {
+  position: relative;
+  z-index: 2;
+}
+.highlight::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  /* left: -100%; */
+  width: 100%;
+  height: 100%;
+  background: rgba(226, 189, 189, 0.8);
+  transition: all 0.35s;
+  z-index: 1;
+}
+.content:hover .highlight::before {
+  left: 0;
+}
