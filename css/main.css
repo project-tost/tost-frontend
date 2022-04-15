@@ -2,6 +2,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.logout:hover {
+  background-color: #bf7780;
+  color: white;
+  border-radius: 30px;
+}
 #menu {
   background-color: white;
   position: fixed;
@@ -152,6 +158,7 @@ button.logout {
   top: 15%;
   right: 2%;
   background-color: white;
+  cursor: pointer;
 }
 
 /* footer */
