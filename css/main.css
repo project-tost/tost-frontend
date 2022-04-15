@@ -94,7 +94,6 @@ ul {
 
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
 }
 
 .dropbtn {
@@ -188,7 +187,7 @@ footer {
 }
 
 .footer-distributed h3 span {
-  color: #5383d3;
+  color: #ee798d;
 }
 
 .footer-distributed .footer-links {
@@ -248,7 +247,7 @@ footer {
 }
 
 .footer-distributed .footer-center p a {
-  color: #5383d3;
+  color: #ee798d;
   text-decoration: none;
 }
 

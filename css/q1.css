@@ -1,0 +1,300 @@
+/* 카운트다운 */
+body {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+.counter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.counter.hide {
+  transform: translate(-50%, -50%) scale(0);
+  animation: hide 0.2s ease-out;
+}
+
+@keyframes hide {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.final {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.final.show {
+  transform: translate(-50%, -50%) scale(1);
+  animation: show 0.3s ease-in;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  80% {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.nums {
+  color: #bf7780;
+  position: relative;
+  font-size: 200px;
+  overflow: hidden;
+  width: 250px;
+  height: 200px;
+}
+
+.nums span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(120deg);
+  transform-origin: bottom center;
+}
+
+.nums span.in {
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: goIn 0.5s ease-in-out;
+}
+
+.nums span.out {
+  animation: goOut 0.5s ease-in-out;
+}
+
+@keyframes goIn {
+  0% {
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+
+  90%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes goOut {
+  0%,
+  30% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(-120deg);
+  }
+}
+
+h4 {
+  font-size: 20px;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+footer i {
+  color: red;
+}
+
+footer a {
+  color: #3c97bf;
+  text-decoration: none;
+}
+h1 {
+  color: gray;
+  font-size: 100px;
+}
+#test {
+  color: black;
+  font-size: 25px;
+}
+h2 {
+  color: white;
+  font-size: 20px;
+}
+
+/* 백그라운드 색깔 및 크기 설정 */
+html,
+body {
+  background: #ddd;
+}
+.outer {
+  width: 1900px;
+  height: 950px;
+  background: #2d315f;
+}
+.inner {
+  width: 1400px;
+  height: 750px;
+  background: white;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* 가운데 정렬 */
+.outer {
+  text-align: center;
+}
+
+.inner {
+  display: inline-block;
+}
+
+/* absolute */
+.outer,
+.inner {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 300;
+}
+
+.btn {
+  width: 80px;
+  height: 30px;
+
+  /* 위치 */
+  position: absolute;
+  right: 220px;
+  bottom: 0px;
+
+  /* 상자 디자인 큰틀*/
+  margin-bottom: 30px;
+  margin-right: 30px;
+  border: 0px;
+  background-color: #ce0d17;
+  border-radius: 10px;
+  /* 그림자 */
+  /* border-radius: 10px;
+        box-shadow:.8rem .5rem 1.4rem  #BEC5D0, -.3rem -.4rem .8rem #FBFBFB; */
+  /* box-shadow:-.2rem -.2rem 1.8rem white, .8rem .8rem 1.4rem  #AAB7CB; */
+
+  /* 글씨 */
+  color: #ffffff;
+  font-size: 0.9em;
+  font-weight: bold;
+
+  animation-name: keybtn-language;
+  animation-duration: 0.2s;
+}
+
+/*버튼 눌리는 효과*/
+.btn:active {
+  box-shadow: inset -0.3rem -0.1rem 1.4rem #fbfbfb,
+    inset 0.3rem 0.4rem 0.8rem #bec5d0;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  margin-left: 95px;
+  margin-right: 100px;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 36px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.a {
+  border: 1px solid #bf7780;
+}
+
+/* time */
+.container {
+  margin: auto;
+  width: 400px;
+}
+
+.path--background {
+  fill: rgb(34, 213, 201);
+  stroke: #fff;
+  stroke-width: 0px;
+}
+
+.pulse {
+  fill: rgb(255, 74, 74) !important;
+}
+
+.path--foreground {
+  fill: #eee;
+  stroke: #eee;
+  stroke-width: 2px;
+}
+
+.label {
+  font: 90px "Open Sans";
+  font-weight: 900;
+  text-anchor: middle;
+  fill: rgb(34, 213, 201);
+}
+#sec {
+  font-size: 30px;
+}
